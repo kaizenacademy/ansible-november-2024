@@ -8,3 +8,12 @@
     src: /tmp/wordpress.tar.gz
     dest: /tmp
     remote_src: yes
+
+- name: Copy file with owner and permissions
+  ansible.builtin.copy:
+    src: /tmp/wordpress/.
+    dest: /var/www/html
+    owner: www-data
+    group: www-data
+    mode: '0755'
+    remote_src: yes
