@@ -7,3 +7,4 @@
   ansible.builtin.unarchive:
     src: /tmp/wordpress-6.7.1.tar.gz
     dest: /tmp
+    remote_src: yes
