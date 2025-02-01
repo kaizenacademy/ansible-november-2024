@@ -17,3 +17,8 @@
     group: www-data
     mode: '0755'
     remote_src: yes
+
+- name: Remove index.html
+  ansible.builtin.file:
+    path: /var/www/html/index.html
+    state: absent
