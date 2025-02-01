@@ -19,4 +19,5 @@
   community.mysql.mysql_db:
     name: kaizen
     state: present
+    login_unix_socket: /run/mysqld/mysqld.sock
 
